@@ -7,7 +7,7 @@ import About from "./components/About";
 
 function App() {
   return (
-    <header>
+    <section>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <NavLink to="/"><a class="navbar-brand" >Camila Olivares R</a></NavLink>
       <div class="container-fluid">
@@ -38,7 +38,44 @@ function App() {
           <Route path="about" element={<About/>} />
       </Routes>
     </main>
-    </header>
+    <footer class="text-center bg-body-tertiary">
+    <div class="container pt-4">
+    <section class="mb-4">
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-linkedin"></i
+      >
+      </a>
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+  </div>
+  <div class="text-center p-3">
+    <p>© 2024 Copyright: Make love CamiDev</p> 
+    
+  </div>
+    </footer>
+    </section>
+   
   );
 }
 
